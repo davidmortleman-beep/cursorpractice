@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --loft-green: #1B4D3E;
+  --loft-off-white: #F5F5F0;
+  --loft-green-light: #2d6b58;
+  --loft-green-dark: #0f3328;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  color: var(--loft-green);
+  background-color: var(--loft-off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--loft-off-white);
+  outline-offset: 2px;
+}
+
