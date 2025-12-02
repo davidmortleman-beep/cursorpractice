@@ -159,13 +159,34 @@
               sun drops, the fairy lights flick on, the music turns up, and the
               bar becomes the cosy heart of the party.
             </p>
-            <div class="tt-experience-highlights">
+            <div class="tt-experience-flow">
               <h3>How it all flows</h3>
-              <ul class="tt-list">
-                <li><strong>We roll in early</strong> to set up quietly and make sure everything is ice‑cold and photo‑ready.</li>
-                <li><strong>We read the room</strong> — keeping service smooth, friendly, and fun so queues move and glasses stay full.</li>
-                <li><strong>We vanish at the end</strong>, packing down without a fuss so you can head home buzzing, not cleaning.</li>
-              </ul>
+              <div class="tt-flow-steps" aria-label="How The Tipsy Toucan bar experience flows">
+                <div class="tt-flow-step">
+                  <p class="tt-flow-label">We roll in early</p>
+                  <p class="tt-flow-copy">
+                    We set up quietly and make sure everything is ice‑cold and photo‑ready before guests arrive.
+                  </p>
+                </div>
+                <div class="tt-flow-arrow" aria-hidden="true">
+                  <span class="tt-flow-arrow-icon">➜</span>
+                </div>
+                <div class="tt-flow-step">
+                  <p class="tt-flow-label">We read the room</p>
+                  <p class="tt-flow-copy">
+                    Service stays smooth, friendly, and fun so queues move quickly and glasses stay full.
+                  </p>
+                </div>
+                <div class="tt-flow-arrow" aria-hidden="true">
+                  <span class="tt-flow-arrow-icon">➜</span>
+                </div>
+                <div class="tt-flow-step">
+                  <p class="tt-flow-label">We vanish at the end</p>
+                  <p class="tt-flow-copy">
+                    When it’s time to wrap up, we pack down without a fuss so you can head home buzzing, not cleaning.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -305,6 +326,40 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      let lastScrollTop = 0;
+      const header = document.querySelector('.tt-header');
+      let ticking = false;
+
+      function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 100) {
+          // Only hide/show after scrolling past hero section
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.classList.add('tt-header-hidden');
+          } else {
+            // Scrolling up
+            header.classList.remove('tt-header-hidden');
+          }
+        } else {
+          // Always show header at top of page
+          header.classList.remove('tt-header-hidden');
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(handleScroll);
+          ticking = true;
+        }
+      });
+    </script>
   </body>
 </html>
 
