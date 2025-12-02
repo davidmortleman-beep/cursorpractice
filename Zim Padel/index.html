@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padel Zim - Zimbabwe's Premier Padel Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Barlow', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', 'Barlow', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#EAEAEA]">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex-shrink-0">
+          <img src="assets/logo.png" alt="Padel Zim Logo" class="h-10 w-auto">
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Home</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Book a Court</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Open Matches</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">News</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">The Club</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-900 hover:text-gray-600" id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="md:hidden hidden pb-4" id="mobile-menu">
+        <div class="flex flex-col space-y-4">
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Home</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Book a Court</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">Open Matches</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">News</a>
+          <a href="#" class="text-gray-900 font-medium hover:text-[#0072ff] transition-colors duration-200">The Club</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images.jpeg" alt="Padel court" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-24">
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
+        Zimbabwe's Premier Padel Experience
+      </h1>
+      <p class="text-xl sm:text-2xl text-white/90 mb-12 font-light max-w-2xl mx-auto">
+        Play, train & compete at world-class facilities in Harare.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#" class="px-8 py-4 bg-[#0072ff] text-white font-semibold rounded-2xl hover:bg-[#0056cc] transition-colors duration-200 text-lg shadow-lg">
+          Book a Court
+        </a>
+        <a href="#app-section" class="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-2xl border-2 border-white/30 hover:bg-white/20 transition-all duration-200 text-lg">
+          Download App
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue Cards Section -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-16 tracking-tight">
+        Our Venues
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Venue Card 1 -->
+        <div class="bg-white rounded-3xl shadow-sm border border-[#EAEAEA] overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="relative h-64">
+            <img src="assets/images.jpeg" alt="Padel court" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Padel Zim Harare</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              State-of-the-art padel courts featuring premium surfaces and professional lighting for day and night play.
+            </p>
+            <p class="text-sm text-gray-500 mb-6">Cnr Sloane Street, Glen Esk & 170 The Chase, Harare</p>
+            <a href="#" class="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors duration-200">
+              View Courts
+            </a>
+          </div>
+        </div>
+
+        <!-- Venue Card 2 -->
+        <div class="bg-white rounded-3xl shadow-sm border border-[#EAEAEA] overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div class="relative h-64">
+            <img src="assets/images (2).jpeg" alt="Padel court" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Padel Zim Courts</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Modern facilities designed for both competitive matches and social play, with comfortable viewing areas.
+            </p>
+            <p class="text-sm text-gray-500 mb-6">Cnr Sloane Street, Glen Esk & 170 The Chase, Harare</p>
+            <a href="#" class="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors duration-200">
+              View Courts
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Feature 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Premium Courts</h3>
+          <p class="text-gray-600 leading-relaxed">
+            World-class playing surfaces with professional-grade equipment and optimal court conditions.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Social & Competitive Matches</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Join leagues, tournaments, or casual games. Connect with players of all skill levels.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">App-Powered Experience</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Book courts, manage matches, and track your progress all from your mobile device.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-16 tracking-tight">
+        Experience Padel Zim
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/images.jpeg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/images (2).jpeg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/banner-contacto.jpg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/fondo-noticias.jpg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/images (1).jpeg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="relative h-80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <img src="assets/images.jpeg" alt="Padel court" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Section -->
+  <section id="app-section" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 flex justify-center lg:justify-start">
+          <div class="relative w-full max-w-sm">
+            <img src="assets/images (1).jpeg" alt="Padel Zim App" class="w-full h-auto rounded-3xl shadow-xl">
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 space-y-8">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
+            Book & manage your padel from the Padel Zim App.
+          </h2>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Reserve courts, join matches, and stay connected with the Padel Zim community—all from your phone.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#" class="inline-block transition-transform hover:scale-105 duration-200">
+              <img src="assets/icon-app-store.png" alt="Download on App Store" class="h-14 w-auto">
+            </a>
+            <a href="#" class="inline-block transition-transform hover:scale-105 duration-200">
+              <img src="assets/icon-google-play.png" alt="Get it on Google Play" class="h-14 w-auto">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-[#EAEAEA] py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <img src="assets/logo.png" alt="Padel Zim Logo" class="h-12 w-auto mb-6">
+        </div>
+        <div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-2">
+            Cnr Sloane Street, Glen Esk & 170 The Chase, Harare
+          </p>
+        </div>
+        <div>
+          <p class="text-gray-600 text-sm mb-2">
+            Phone: <a href="tel:+263788468435" class="text-gray-900 hover:underline">+263 788 468 435</a>
+          </p>
+          <p class="text-gray-600 text-sm">
+            Email: <a href="mailto:padelzim@gmail.com" class="text-gray-900 hover:underline">padelzim@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-[#EAEAEA] pt-8">
+        <p class="text-gray-500 text-xs text-center">
+          This is a static visual demo. Bookings continue through Matchpoint.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+</body>
+</html>
